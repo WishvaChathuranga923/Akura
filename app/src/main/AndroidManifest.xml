@@ -22,10 +22,8 @@
         
         <service
             android:name=".InputMethodService"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:process=":sithakuru.sinhala.keyboard.input.method.service"
-            android:permission="android.permission.BIND_INPUT_METHOD">
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
             </intent-filter>
