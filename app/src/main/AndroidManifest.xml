@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Night">
+        
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -18,9 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <service
             android:name=".InputMethodService"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/app_name"
             android:process=":sithakuru.sinhala.keyboard.input.method.service"
             android:permission="android.permission.BIND_INPUT_METHOD">
@@ -31,5 +33,6 @@
                 android:name="android.view.im"
                 android:resource="@xml/method" />
         </service>
+        
     </application>
 </manifest>
