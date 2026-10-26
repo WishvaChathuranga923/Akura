@@ -10,31 +10,26 @@ import sithakuru.sinhala.keyboard.data.Action
 
 class SithakuruInputMethodService : InputMethodService() {
 
+    // If your service class has a different name (e.g., just InputMethodService), 
+    // keep your class name and replace the contents inside it with this logic.
+
     /**
-     * Call this method when your clipboard key is clicked in the keyboard layout view.
+     * Handle actions coming from key clicks, including the new CLIPBOARD action.
      */
-    fun handleAction(actionId: Int) {
-        when (actionId) {
-            Action.ACTION_CLIPBOARD -> {
+    fun handleAction(action: Int) {
+        when (action) {
+            Action.CLIPBOARD -> {
                 pasteFromClipboard()
             }
-            Action.DELETE -> {
-                currentInputConnection?.deleteSurroundingText(1, 0)
-            }
-            Action.SPACE -> {
-                currentInputConnection?.commitText(" ", 1)
-            }
-            Action.ENTER -> {
-                sendKeyChar('\n')
-            }
+            // Keep your other action handlers here (like Backspace, Space, Shift, etc.)
             else -> {
-                // Handle other actions
+                // Default handling
             }
         }
     }
 
     /**
-     * Reads the primary clip text from the Android system clipboard and pastes it.
+     * Reads text from the Android system clipboard and inserts it into the active text field.
      */
     private fun pasteFromClipboard() {
         try {
