@@ -1,0 +1,13 @@
+Sithakuru is a Free and Open-Source Sinhalese keyboard.
+
+## Keyboard Layouts
+- English
+- Wijesekara
+- Singlish
+
+## Other facilities
+- Light or Dark colors
+- Show/hide key borders
+- Show Sinhala letters on keys in Wijesekara layout
+- Change keyboard height and font size
+- Erase or move cursor with swiping
