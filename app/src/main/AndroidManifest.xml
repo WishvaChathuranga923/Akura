@@ -12,7 +12,7 @@
         android:theme="@style/Night">
         
         <activity
-            android:name=".MainActivity"
+            android:name="sithakuru.sinhala.keyboard.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
         </activity>
         
         <service
-            android:name=".InputMethodService"
+            android:name="sithakuru.sinhala.keyboard.InputMethodService"
             android:permission="android.permission.BIND_INPUT_METHOD"
             android:exported="true">
             <intent-filter>
