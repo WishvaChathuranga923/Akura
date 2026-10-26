@@ -1,20 +1,3 @@
-/*
- * This file is part of Sithakuru.
- *
- * Sithakuru is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, version 3.
- *
- * Sithakuru is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with Sithakuru.  If not, see <https://www.gnu.org/licenses/>.
- *
- */
-
 package sithakuru.sinhala.keyboard.layouts
 
 import sithakuru.sinhala.keyboard.R
@@ -57,7 +40,7 @@ class Symbols : BaseLayout(indicator = "#!") {
             Action.SHIFT.toKeyData(iconRes = R.drawable.ic_shift, widthMultiplier = 1.5F),
             KeyData(CharCode.ASTERISK, CharText.ASTERISK),
             KeyData(CharCode.QUOTATION_MARK, CharText.QUOTATION_MARK),
-            Action.CLIPBOARD.toKeyData(iconRes = R.drawable.ic_clipboard), // Added Clipboard Key here
+            KeyData(CharCode.APOSTROPHE, CharText.APOSTROPHE),
             KeyData(CharCode.COLON, CharText.COLON),
             KeyData(CharCode.SEMICOLON, CharText.SEMICOLON),
             KeyData(CharCode.EXCLAMATION_MARK, CharText.EXCLAMATION_MARK),
@@ -96,7 +79,7 @@ class Symbols : BaseLayout(indicator = "#!") {
             Action.SHIFT.toKeyData(iconRes = R.drawable.ic_shift_pressed, widthMultiplier = 1.5F),
             KeyData(CharCode.BULLET, CharText.BULLET),
             KeyData(CharCode.CIRCLED_CC, CharText.CIRCLED_CC),
-            Action.CLIPBOARD.toKeyData(iconRes = R.drawable.ic_clipboard), // Added Clipboard Key here
+            KeyData(CharCode.CIRCLED_ZERO_WITH_SLASH, CharText.CIRCLED_ZERO_WITH_SLASH),
             KeyData(CharCode.CIRCLED_HUMAN_FIGURE, CharText.CIRCLED_HUMAN_FIGURE),
             KeyData(CharCode.CIRCLED_ANTICLOCKWISE_ARROW, CharText.CIRCLED_ANTICLOCKWISE_ARROW),
             KeyData(CharCode.CIRCLED_DOLLAR_SIGN_WITH_OVERLAID_BACKSLASH, CharText.CIRCLED_DOLLAR_SIGN_WITH_OVERLAID_BACKSLASH),
