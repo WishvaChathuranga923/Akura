@@ -57,7 +57,7 @@ class Symbols : BaseLayout(indicator = "#!") {
             Action.SHIFT.toKeyData(iconRes = R.drawable.ic_shift, widthMultiplier = 1.5F),
             KeyData(CharCode.ASTERISK, CharText.ASTERISK),
             KeyData(CharCode.QUOTATION_MARK, CharText.QUOTATION_MARK),
-            KeyData(CharCode.APOSTROPHE, CharText.APOSTROPHE),
+            Action.CLIPBOARD.toKeyData(iconRes = R.drawable.ic_clipboard), // Added Clipboard Key here
             KeyData(CharCode.COLON, CharText.COLON),
             KeyData(CharCode.SEMICOLON, CharText.SEMICOLON),
             KeyData(CharCode.EXCLAMATION_MARK, CharText.EXCLAMATION_MARK),
@@ -96,7 +96,7 @@ class Symbols : BaseLayout(indicator = "#!") {
             Action.SHIFT.toKeyData(iconRes = R.drawable.ic_shift_pressed, widthMultiplier = 1.5F),
             KeyData(CharCode.BULLET, CharText.BULLET),
             KeyData(CharCode.CIRCLED_CC, CharText.CIRCLED_CC),
-            KeyData(CharCode.CIRCLED_ZERO_WITH_SLASH, CharText.CIRCLED_ZERO_WITH_SLASH),
+            Action.CLIPBOARD.toKeyData(iconRes = R.drawable.ic_clipboard), // Added Clipboard Key here
             KeyData(CharCode.CIRCLED_HUMAN_FIGURE, CharText.CIRCLED_HUMAN_FIGURE),
             KeyData(CharCode.CIRCLED_ANTICLOCKWISE_ARROW, CharText.CIRCLED_ANTICLOCKWISE_ARROW),
             KeyData(CharCode.CIRCLED_DOLLAR_SIGN_WITH_OVERLAID_BACKSLASH, CharText.CIRCLED_DOLLAR_SIGN_WITH_OVERLAID_BACKSLASH),
